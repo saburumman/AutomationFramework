@@ -43,7 +43,7 @@ public class SearchForAuction extends BaseFile {
             boolean found = false;
 
             for (WebElement result : results) {
-                String resultText = result.getText().trim();
+                String resultText = result.getText();
                 System.out.println("Comparing: '" + resultText + "' with searched: '" + searchItem );
                 if (resultText.equalsIgnoreCase(searchItem)) {
                     found = true;
